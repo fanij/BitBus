@@ -2566,11 +2566,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   text-align: center;
 }
 
-#download h1 {
+#download h2 {
   color: #ffffff;
 }
 
-#download h1::before {
+#download h2::before {
   background-color: #2a9038;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2702,10 +2702,10 @@ footer ul a:visited {
   padding: 0;
   outline: 0;
   border: none;
-  width: 93px;
-  height: 21px;
+  width: 126px;
+  height: 30px;
   background: url("../images/logo.png") no-repeat center;
-  background-size: 93px 21px;
+  background-size: 126px 30px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
