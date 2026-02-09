@@ -1,293 +1,374 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>BitBus - Bitola City Bus</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="favicon.ico">
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-        <!--Google Font link-->
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+<head>
+
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>BitBus - Bitola City Bus</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header 
+   ================================================== -->
+   <header id="header" class="row">   
+
+   		<div class="header-logo">
+	        <a href="index.html">BitBus</a>
+	    </div>
+
+	   	<nav id="header-nav-wrap">
+			<ul class="header-main-nav">
+				<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>	
+			</ul>
+
+            <a href="#download" title="sign-up" class="button button-primary cta">Download</a>
+		</nav>
+
+		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
+   	
+   </header> <!-- /header -->
 
 
-        <link rel="stylesheet" href="assets/css/swiper.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/iconfont.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/bootsnav.css">
+   <!-- home
+   ================================================== -->
+   <section id="home" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000>
 
+        <div class="overlay"></div>
+        <div class="home-content">        
 
+            <div class="row contents">                     
+                <div class="home-content-left">
 
-        <!--For Plugins external css-->
-        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
+                    <h3 data-aos="fade-up">Never Miss Your Ride Again</h3>
 
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
+                    <h1 data-aos="fade-up">
+                        BitBus -  <br>
+                        Bitola City Bus
+                    </h1>
+                    
+                    <p data-aos="fade-up">Track your bus schedules, maps, and arrival times.</p>
 
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
+                    <div class="buttons" data-aos="fade-up">
+                        <a href="#download" class="smoothscroll button stroke">
+                            <span class="icon-circle-down" aria-hidden="true">
+                                <i class="far fa-arrow-alt-circle-down" aria-hidden="true"></i>
+                            </span>
+                            Download App
+                        </a>
+                    </div>                                         
 
-    <body data-spy="scroll" data-target=".navbar-collapse">
-
-
-        <!-- Preloader -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
+                </div>
+                <div class="home-image-right">
+                    <img class="glass-frame" src="images/iphone-app-470.png" 
+                        srcset="images/iphone-app-470.png 1x, images/iphone-app-940.png 2x"  
+                            data-aos="fade-up">
                 </div>
             </div>
-        </div><!--End off Preloader -->
 
+        </div> <!-- end home-content -->
 
-        <div class="culmn">
-            <!--Home page style-->
+        <ul class="home-social-list">
+            <li>
+                <a href="https://github.com/fanij" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+        <!-- end home-social-list -->
 
-
-            <nav class="navbar navbar-default bootsnav navbar-fixed white no-background">
-                <div class="container">  
-
-                    <!-- Start Atribute Navigation -->
-                    <div class="attr-nav">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        </ul>
-                    </div>        
-                    <!-- End Atribute Navigation -->
-
-
-                    <!-- Start Header Navigation -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="#brand">
-                            <img src="assets/images/logo.png" class="logo logo-display" alt="">
-                            <img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">
-                        </a>
-
-                    </div>
-                    <!-- End Header Navigation -->
-
-                    <!-- navbar menu -->
-                    <div class="collapse navbar-collapse" id="navbar-menu">
-                        <ul class="nav navbar-nav navbar-center">
-                            <li><a href="#home">Home</a></li>                    
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#download">Download</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div>   
-            </nav>
-
-            <!--Home Sections-->
-
-            <section id="home" class="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home">
-                            <div class="col-md-6">
-                                <div class="home_text">
-                                    <h1 class="text-white">BitBus<br>Bitola City Bus</h1>
-                                </div>
-
-                                <div class="home_btns m-top-40">
-                                    <a href="" class="btn btn-danger m-top-20">Download</a>
-                                    <a href="" class="btn btn-primary m-top-20">Features</a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="phone_one phone_attr1 text-center sm-m-top-50">
-                                    <div class="attr_deg"></div>
-                                    <div class="attr_rio text-uppercase"></div>
-                                    <div class="attr_sun text-uppercase text-white">Bus</div>
-                                    <div class="attr_lon text-uppercase text-white">Bitola</div>
-                                    <img src="assets/images/phone01.png" alt="" />
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="scrooldown">
-                            <a href="#features"><i class="fa fa-chevron-down"></i></a>
-                        </div>
-
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section> <!--End off Home Sections-->
-
-
-
-            <!--Featured Section-->
-            <section id="features" class="features">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_features p-top-100">
-                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <div class="head_title text-center" style="padding-bottom: 0em;">
-                                    <h2>Features</h2>
-                                    <h5>BitBus is your real-time city bus companion. Open the app to see bus line schedules, upcoming buses for station and station locations on the map.</h5>
-                                </div>
-                            </div>
-
-                           
-                        </div>
-                    </div><!-- End off row -->
-                </div><!-- End off container -->
-            </section><!-- End off Featured Section-->
-
-
-
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="main_drag roomy-50" style="padding-top: 0px">
-                            <div class="col-md-12">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background-image:url(assets/images/drag1.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(assets/images/drag2.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(assets/images/drag3.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(assets/images/drag4.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(assets/images/drag5.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(assets/images/drag6.png)"></div>
-                                    </div>
-                                    <!-- If we need navigation buttons -->
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!--App Download Section-->
-            <section id="download" class="download m-top-100">
-                <div class="download_overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="main_download ">
-                            <div class="col-md-6">
-                                <div class="download_item roomy-100">
-                                    <h2 class="text-white">How to Download the app?</h2>
-                                    <h5 class="text-white m-top-20">Just download the app from the store.</h5>
-
-                                    <div class="download_app m-top-30">
-                                        <a href="https://apps.apple.com/us/app/bitbus-bitola-city-bus/id6743807268"><img src="assets/images/appstor.png" alt="" /></a>
-                                        <!--<a href=""><img src="assets/images/googleplay.png" alt="" /></a>-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="download_item m-top-70">
-                                    <img class="app_right" src="assets/images/appdownload1.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- scroll up-->
-            <div class="scrollup">
-                <a href="#"><i class="fa fa-chevron-up"></i></a>
-            </div><!-- End off scroll up -->
-            
-            
-            <footer id="footer" class="footer bg-black">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <nav class="navbar navbar-default bootsnav footer-menu no-background">
-                                <div class="container">  
-
-                                    <!-- Start Atribute Navigation -->
-                                    <div class="attr-nav">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                        </ul>
-                                    </div>        
-                                    <!-- End Atribute Navigation -->
-
-
-                                    <!-- Start Header Navigation -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
-                                            <i class="fa fa-bars"></i>
-                                        </button>
-                                        <a class="navbar-brand" href="#brand"><img src="assets/images/footer-logo.png" class="logo" alt=""></a>
-                                    </div>
-                                    <!-- End Header Navigation -->
-
-                                    <!-- navbar menu -->
-                                    <div class="collapse navbar-collapse" id="navbar-footer">
-                                        <ul class="nav navbar-nav navbar-center">
-                                            <li><a href="#home">Home</a></li>                    
-                                            <li><a href="#features">Features</a></li>
-                                            <li><a href="#download">Download</a></li>
-                                        </ul>
-                                    </div><!-- /.navbar-collapse -->
-                                </div>   
-                            </nav>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="col-md-12">
-                        	<div class="col-md-8">
-	                            <div class="main_footer text-left p-top-40 p-bottom-30">
-	                                <p class="wow fadeInRight" data-wow-duration="1s">
-	                                    Made with 
-	                                    <i class="fa fa-heart"></i>
-	                                    by 
-	                                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
-	                                    2025. All Rights Reserved
-	                                </p>
-	                            </div>
-                            </div>
-                            <div class="col-md-4">
-                            	<div class="main_footer text-right p-top-40 p-bottom-30">
-	                                <p class="wow fadeInRight" data-wow-duration="1s">
-	                                    <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
-	                                </p>
-	                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-
-
-
+        <div class="home-scrolldown">
+            <a href="#about" class="scroll-icon smoothscroll">
+                <span>Scroll Down</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
         </div>
 
-        <!-- JS includes -->
-
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-        <script src="assets/js/jquery.magnific-popup.js"></script>
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <script src="assets/js/swiper.min.js"></script>
-        <script src="assets/js/jquery.collapse.js"></script>
-        <script src="assets/js/bootsnav.js"></script>
+    </section> <!-- end home -->  
 
 
+    <!-- about
+    ================================================== -->
+    <section id="about">
 
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
+        <div class="row about-intro">
 
-    </body>
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="fade-up">About Our App</h1>
+            </div>
+            <div class="col-eight">
+                <p class="lead" data-aos="fade-up">
+                    Tired of waiting at the bus stop wondering when your ride will show up? <span style="font-weight: 900;">BitBus</span> is your ultimate public bus transit companion, designed to take the guesswork out of your daily commute. Whether you are a daily professional, a student, or a weekend explorer, BitBus puts the entire <span style="font-weight: 900;">Bitola</span> city’s public bus transit network right in your pocket.
+                </p>
+            </div>                       
+            
+        </div>
+
+        <div class="row about-features">
+
+            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+
+                <div class="bgrid feature" data-aos="fade-up">	
+
+                    <span class="icon"><i class="far fa-list-alt"></i></span>            
+
+                    <div class="service-content">	
+
+                        <h3>At-a-Glance Info</h3>
+
+                        <p>Essential data like arrival times and bus stop locations are front and center, so you spend less time looking at your screen and more time moving.
+                        </p>
+                        
+                    </div> 	         	 
+
+                    </div> <!-- /bgrid -->
+
+                    <div class="bgrid feature" data-aos="fade-up">	
+
+                        <span class="icon"><i class="far fa-map"></i></span>                          
+
+                    <div class="service-content">	
+                        <h3>Interactive Transit Map</h3>  
+
+                        <p>Visualize your journey. Locate nearby bus stops. Click any bus stop and see exactly how many minutes until the next buses arrive.
+                        </p>
+
+                        
+                    </div>	                          
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="far fa-calendar-alt"></i></span>		            
+
+                    <div class="service-content">
+                        <h3>Comprehensive Schedules</h3>
+
+                        <p>Plan ahead with ease. Access full timetables for every bus line in Bitola city to organize your day with confidence.
+                        </p> 
+                            
+                    </div> 	            	               
+
+                </div> <!-- /bgrid -->
+
+                    <div class="bgrid feature" data-aos="fade-up">
+
+                        <span class="icon"><i class="fa fa-search"></i></span>	              
+
+                    <div class="service-content">
+                        <h3>Smart Bus Stop Search</h3>
+
+                        <p>Quickly find bus stop locations and see which lines service them, ensuring you always take the most efficient path.
+                        </p> 
+                        
+                    </div>                
+
+                    </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="fas fa-sliders-h"></i></span>	            
+
+                    <div class="service-content">	
+                        <h3>User-Friendly Interface</h3>
+
+                        <p>Designed for simplicity BitBus features a clean, intuitive interface that eliminates clutter, allowing you to find your bus line or stop in just a couple of taps.
+                        </p>                            
+                    </div>	               
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="far fa-heart"></i></span>	   	           
+
+                    <div class="service-content">
+                        <h3>Free to Use</h3>
+
+                        <p>BitBus is accessible for everyone. Enjoy full access to your bus schedules, maps, and arrival times without ever hitting a paywall or needing a subscription.
+                        </p> 
+                            
+                    </div>	               
+
+                </div> <!-- /bgrid -->
+
+            </div> <!-- end features-list -->
+
+        </div> <!-- end about-features -->
+
+
+        <div class="row about-bottom-image">
+
+            <div class="carousel-wrapper" data-aos="fade-up">
+                <button class="btn" id="prev"><i class="fas fa-angle-left fa-xs"></i></button>
+
+                <div class="carousel-stage">
+                    <div class="item"><img src="images/appscreens/carousel_01.jpeg"></div>
+                    <div class="item"><img src="images/appscreens/carousel_02.jpeg"></div>
+                    <div class="item"><img src="images/appscreens/carousel_03.jpeg"></div>
+                    <div class="item"><img src="images/appscreens/carousel_04.jpeg"></div>
+                    <div class="item"><img src="images/appscreens/carousel_05.jpeg"></div>
+                    <div class="item"><img src="images/appscreens/carousel_06.jpeg"></div>
+                </div>
+
+                <button class="btn" id="next"><i class="fas fa-angle-right fa-xs"></i></button>
+            </div> 
+
+        </div>  <!-- end about-bottom-image -->       
+        
+    </section> <!-- end about -->  
+
+
+    <!-- download
+    ================================================== -->
+    <section id="download">
+
+        <div class="row">
+            <div class="col-full">
+                <h1 class="intro-header"  data-aos="fade-up">Download BitBus today and master Bitola’s rhythm!</h1>
+
+                <p class="lead" data-aos="fade-up">
+                    Available on the Apple App Store. 
+                </p>
+
+                <ul class="download-badges">
+                    <li><a href="https://apps.apple.com/us/app/bitbus-bitola-city-bus/id6743807268" title="" class="badge-appstore"  data-aos="fade-up">App Store</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section> <!-- end download -->    
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="footer-main">
+            <div class="row">  
+
+                <div class="col-three md-1-3 tab-full footer-info">            
+
+                    <div class="footer-logo"></div>
+
+                    <p>
+                    BitBus is built with the commuter in mind. Navigate Bitola busses with confidence, avoid the rain, and stay on move.
+                    </p>
+
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="https://github.com/fanij" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    
+                    
+                </div> <!-- end footer-info -->
+
+                <div class="col-three md-1-3 tab-1-2 mob-full footer-contact">
+
+                    <h4>Need Help?</h4>
+
+                    <p>
+                    Questions, feedback, or technical issues?<br>
+                    <i class="fa fa-envelope"></i>
+                    <span id="eadress"></span><br>
+	                Visit us on GitHub.<br>
+                    </p>
+
+                </div> <!-- end footer-contact -->  
+
+                <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
+
+                    <h4>Site Links</h4>
+
+                    <ul class="list-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="privacy_policy.html" target="_blank">Privacy Policy</a></li>
+                    </ul>	      		
+                            
+                </div> <!-- end footer-site-links --> 
+
+                <div class="col-four md-1-2 tab-full footer-subscribe">
+
+                    <h4>Download</h4>
+
+                    <ul class="list-links">
+                        <li><i class="fab fa-apple"></i><a href="https://apps.apple.com/us/app/bitbus-bitola-city-bus/id6743807268"> BitBus - Bitola City Bus</a></li>
+                    </ul>	      		
+                            
+                </div> <!-- end footer-subscribe -->         
+
+            </div> <!-- /row -->
+        </div> <!-- end footer-main -->
+
+      <div class="footer-bottom">
+
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright Fani Jashmakovska 2025.</span> 
+		         	<span>Made with <i class="fa fa-heart"></i> by <a href="http://www.styleshout.com/" target="_blank">styleshout</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> <!-- end footer-bottom -->     	
+
+      </div>
+
+    </footer>
+
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>  
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
