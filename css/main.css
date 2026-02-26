@@ -862,6 +862,15 @@ button.pill,
   border-radius: 1000px;
 }
 
+button.lang,
+.button.lang {
+  background-color: transparent;
+  color: #fff;
+  padding: 5px;
+  padding-left: 20px;
+  border: none;
+}
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
