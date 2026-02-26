@@ -78,6 +78,12 @@ body {
   padding: 0;
 }
 
+#home-content-desc {
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #C6C6C6;
+}
+
 
 /* ------------------------------------------------------------------- 
  * links - (_document-setup) 
